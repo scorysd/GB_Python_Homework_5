@@ -29,5 +29,5 @@ def write_in_file (str1, func):
     with open("output.txt", "w") as file:
         file.write(("".join(map(str,func(str1)))))
 uncoding(str1)                  # функция восстановления
-coding(str1)                    # функция сжатия
-write_in_file(str1, coding)     # неоюходимо выбрать нужную функцию
+# coding(str1)                    # функция сжатия
+write_in_file(str1, uncoding)     # неоюходимо выбрать нужную функцию
